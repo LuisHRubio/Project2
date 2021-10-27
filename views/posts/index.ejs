@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>Cat Ctus Blog</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="imagenes/CactusGato.png">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body class="fondoColorLi fondo" >
+
+<!--El encabezado verde con el gatito-->
+<div class="row  py-3 justify-content-center fondoTitulo">
+
+    <div class="col-md-3 text-center" style="min-width: 700px">
+        <a href="/" style="text-decoration: none"><p class="letrasTitulo align-items-center"><b>Cat Ctus Blog</b></p></a>
+    </div>
+    <div class="col-md-2 ml-4 text-center" >
+        <img src="/imagenes/CactusGato.png" class="imagenPrincipal" >
+    </div>
+
+</div>
+<!--Fin dell encabezado verde con el gatito-->
+
+<!--Lo del medio-->
+<div class="container">
+
+    <!--La barra de arriba con las categorias-->
+    <div class="row py-3 px-4 categoriasLi barraOP">
+        <div class="col-sm-9 px-4">
+            <a href="/" class="categoriasLi" style="text-decoration: none" > Blog </a>
+        </div>
+
+        <div class="col-sm-3 text-center">
+            <a href="/posts/new" class="categoriasLi " style="text-decoration: none"> New Post</a>
+        </div>
+
+    </div>
+    <!--Fin de la barra de arriba con las categorias-->
+
+    <!--Nose hingles-->
+    <!--<div class="row py-4">
+        <div class="card col-7 separar BlogPosts" style="width: 18rem;">
+            <img src="./imagenes/Agave.png" class="card-img-top FotoCartas" alt="...">
+            <div class="card-body">
+                <p class="card-title TituloCartas">Agave</p>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary moreInfoBttn">More info...</a>
+            </div>
+        </div>
+    </div>-->
+    <!--Fin de nose-->
+
+    <!-- Lo que contiene las plantas y el cuadro flotando de la derecha-->
+    <div class="row py-4">
+        <!-- Lo que contiene las plantas-->
+        <% posts.forEach(post => { %>
+        <div class="col-12">
+             <div class="card mb-3 separar BlogPosts mx-4">
+                 <div class="row">
+                     <div class="col-3 text-center align-items-center" style="position: relative;top: 20px">
+                         <img src="imagenes/icon4.png" class="img-fluid rounded-start FotoCartas" style="max-height: 350px;width: 90%">
+                     </div>
+                     <div class="col-md-9">
+                         <div class="card-body">
+                             <p class="card-title TituloCartas"><%= post.title %> <span style="color:#9ba686">by <%= post.author %></span></p>
+                             <p class="card-text LastUp"><small ><%= post.createdAt.toLocaleDateString() %></small></p>
+                             <p class="card-text "><%= post.description %></p>
+                             <div>
+                                 <a href="posts/<%= post.id %>" class="btn btn-primary moreInfoBttn">More info...</a>
+                                 <form action="/posts/<%= post.id %>?_method=DELETE" method="POST" class="d-inline">
+                                     <button type="submit" class="btn btn-danger dngrBttn">Delete</button>
+                                 </form>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+        </div>
+        <% }) %>
+
+        <!-- Fin de lo que contiene las plantas-->
+
+        <!-- Columna con el cuadro flotador de la derecha-->
+
+        <!-- Fin de la columna con el cuadro flotador de la derecha-->
+
+    </div>
+    <!-- Fin de lo que contiene las plantas y el cuadro flotando de la derecha-->
+
+</div>
+<!--Fin de lo del medio-->
+
+</body>
+<!--La patadora-->
+<footer class="blog-footer abajo">
+    <div class="row  py-3 fondoTitulo">
+        <div class="col-3  " >
+            <img src="/imagenes/CactusGato.png" class="imagenPrincipal " style="min-width: 300px; min-height: 300px" >
+        </div>
+        <div class="col-9 justify-content-center px-5" style="min-width: 320px; min-height: 320px" >
+            <div class="row">
+
+                <div class="col-4">
+                    <p class="footerText align-items-center "><b>Cat Ctus Blog ® </b></p>
+                    <div><a href="" class="footerContacts" style="text-decoration: none" > Preguntas </a></div>
+                    <div><a href="" class="footerContacts" style="text-decoration: none" > Donar  </a></div>
+                    <div><a href="" class="footerContacts" style="text-decoration: none" > Mas informacion </a></div>
+
+                </div>
+                <div class="col-3">
+                    <p class="footerText align-items-center "><b>Contact Us </b></p>
+                    <div><a target="_blank" href="https://www.instagram.com" class="footerContacts" style="text-decoration: none" > Instagram </a></div>
+                    <div><a target="_blank" href="https://twitter.com/home" class="footerContacts" style="text-decoration: none" > Twitter  </a></div>
+                    <div><a target="_blank" href="https://www.facebook.com" class="footerContacts" style="text-decoration: none" > Facebook </a></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</footer>
+<!--Fin del pie-->
+</html>

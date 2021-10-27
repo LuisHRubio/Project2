@@ -1,0 +1,16 @@
+<div class="form-group">
+    <label for="title" class="categoriasLi">Title</label>
+    <input required value="<%= post.title %>" type="text" name="title" id="title" class="form-control mb-4">
+</div>
+<div class="form-group">
+    <label for="author" class="categoriasLi">Author</label>
+    <input required value="<%= post.author %>" type="text" name="author" id="author" class="form-control mb-4">
+</div>
+<div class="form-group">
+    <label for="description" class="categoriasLi">Description</label>
+    <textarea style="min-height: 200px" value="<%= post.description %>" name="description" id="description" class="form-control mb-4"></textarea>
+</div>
+<div class="my-4">
+    <a href="/" class="btn btn-secondary moreInfoBttn">Cancel</a>
+    <button type="submit" class="btn btn-primary saveBttn">Save</button>
+</div>

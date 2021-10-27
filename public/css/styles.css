@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Mate+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Beastly&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+
+.categoriasLi{
+    font-family: 'Patua One', cursive;
+    font-size: 25px;
+    font-weight: bolder;
+    color: #343a40;
+}
+.fondo {
+    background-image: url("/imagenes/Fondo3.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.imagenPrincipal{
+    max-height: 500px;
+    max-width: 500px;
+    width: 150px;
+    height: 150px;
+}
+.fondoColorLi{
+    background-color: #f9ffee;
+}
+.letrasTitulo{
+    font-family: 'Marck Script', cursive;
+    font-size: 100px;
+    font-weight: bolder;
+    color: #f3faec;
+
+}
+.fondoTitulo{
+    background-color: #4f6e5d;
+
+}
+.separar{
+    padding: 20px;
+}
+.abajo {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+}
+.BlogPosts{
+    border-radius: 25px;
+    background: #def3d6;
+
+    font-family: 'Handlee', cursive;
+    font-weight: bolder;
+    font-size: 20px;
+    color: #32724a;
+}
+.archivos{
+    font-family: 'Handlee', cursive;
+    font-weight: bold;
+    font-size: 15px;
+    color: #32724a;
+    float: top;
+}
+.FotoCartas{
+    border-radius: 10px;
+
+}
+.TituloCartas{
+    font-family: 'Patua One', cursive;
+    font-size: 25px;
+    font-weight: bolder;
+    color: #343a40;
+}
+.moreInfoBttn{
+    font-family: 'Patua One', cursive;
+    font-size: 20px;
+    text-align: center;
+    color: #e9ffda;
+    background-color: #343a40;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px #53d298;
+
+}
+.moreInfoBttn:hover {
+    color: #d7ffbf;
+    background-color: #8897b0;
+    box-shadow: 0 4px #00ff8d;
+
+}
+
+.moreInfoBttn:active {
+    background-color: #65ffb6;
+    box-shadow: 0 5px #141d21;
+    color: #141d21;
+    transform: translateY(4px);
+}
+
+.saveBttn{
+    font-family: 'Patua One', cursive;
+    font-size: 20px;
+    text-align: center;
+    color: #e9ffda;
+    background-color: #286cab;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px #53d298;
+
+}
+.saveBttn:hover {
+    color: #d7ffbf;
+    background-color: #7eb0fc;
+    box-shadow: 0 4px #00ff8d;
+
+}
+
+.saveBttn:active {
+    background-color: #65ffb6;
+    box-shadow: 0 5px #141d21;
+    color: #141d21;
+    transform: translateY(4px);
+}
+
+.dngrBttn{
+    font-family: 'Patua One', cursive;
+    font-size: 20px;
+    text-align: center;
+    color: #e9ffda;
+    background-color: #790b0b;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px #53d298;
+
+}
+.dngrBttn:hover {
+    color: #d7ffbf;
+    background-color: #b46d6d;
+    box-shadow: 0 4px #00ff8d;
+
+}
+
+.dngrBttn:active {
+    background-color: #65ffb6;
+    box-shadow: 0 5px #141d21;
+    color: #141d21;
+    transform: translateY(4px);
+}
+
+.LastUp{
+    color: #bcc9a2;
+}
+div.sticky {
+    min-width: 200px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    background-color: #c6eed7;
+    border: 2px solid #8ee091;
+    border-radius: 15px;
+}
+.footerText{
+    font-family: 'Marck Script', cursive;
+    font-size: 50px;
+    font-weight: bolder;
+    color: #f3faec;
+}
+.footerContacts{
+    font-family: 'Handlee', cursive;
+    font-size: 15px;
+    font-weight: bold;
+    color: #f3faec;
+}
+.barraOP{
+    background: rgba(77, 241, 207, 0.3);
+
+    border-radius: 15px;
+}
+
