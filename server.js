@@ -5,7 +5,11 @@ const postsRouter = require("./routes/posts")
 const app = express("app");
 const methodOverride = require("method-override")
 
-mongoose.connect("mongodb://localhost/blog",    {
+require('dotenv').config({path:'variables.env'});
+
+
+
+mongoose.connect(process.env.DB_URL,    {
     useUnifiedTopology: true
 });
 
@@ -29,4 +33,7 @@ app.get("/",async (req,res)=>{
 
 app.use("/posts",postsRouter);
 
-app.listen(3000);
+const host = process.env.HOST || '0.0.0.0';
+const port = process.env.PORT || 3000;
+
+app.listen(port,host);
